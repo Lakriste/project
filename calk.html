@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Окошкин дом</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar__wrap">
+          <div class="hamb">
+            <div class="hamb__field" id="hamb">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+          <a href="#" class="logo" id="logo">ОКОШКИН <br>ДОМ</a>
+          <ul class="menu" id="menu">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Цены</a></li>
+            <li><a href="#">Портфолио</a></li>
+            <li><a href="#">+7 981 161 87 90</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="popup" id="popup"></div>
+
+    <header class="header">
+      <div class="container">
+        <div class="content">
+          <h1>Рассчитать стоимость</h1>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="content">
+
+
+        	<style>
+        		.calc {}
+        		.calc__fieldset {
+        			display: flex;
+        			align-items: center;
+        			margin-bottom: 20px;
+        		}
+        		.calc__label {
+        			font-size: 20px;
+        			margin-bottom: 5px;
+        			display: block;
+        			margin-right: 20px;
+        		}
+        		.calc__inp {
+        			font-size: 20px;
+        		}
+        		.calc__total {
+        			font-size: 30px;
+        		}
+        		.calc__text {
+        			font-size: 20px;
+        		}
+        	</style>
+          
+
+        	<div class="calc">
+        		<div class="calc__fieldset">
+        			<label for="" class="calc__label">Высота</label>
+        			<input type="number" class="calc__inp" id="square" value="0" min="0" max="3000" onchange='calculateCost();'>
+        		</div>
+        		<div class="calc__fieldset">
+        			<label for="" class="calc__label">Ширина</label>
+        			<input type="number" class="calc__inp" id="floor" value="0" min="0" max="113" onchange='calculateCost();'>
+        		</div>
+        		<div class="calc__fieldset">
+        			<label for="" class="calc__label">Материал</label>
+        			<select name="" class="calc__inp" id="materialType" onchange='calculateCost();'>
+        				<option value="0">---</option>
+        				<option value="1">ПХВ (1000)</option>
+        				<option value="2">Дерево (2000)</option>
+        				<option value="3">Металл (3000)</option>
+        				<option value="4">Комбинация материалов(4000)</option>
+        			</select>
+        		</div>
+
+        		<div class="calc__fieldset">
+        			<div class="calc__total">Стоимость <span id="totalCost" style="font-weight: bold;">Х</span> руб</div>
+        		</div>
+
+        		<div class="calc__fieldset">
+        			<div class="calc__text">Выполняю полный комплекс работ.
+Сдаю объект «Под ключ».
+Предоставляю пакет документов и гарантии.</div>
+        		</div>
+        	</div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="content">
+          &copy; 2023 Kucherenko
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
